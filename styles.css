@@ -1,0 +1,163 @@
+
+/* ## Colors */
+:root {
+--mainBg: hsl(233, 47%, 7%);
+--cardBg: hsl(244, 38%, 16%);
+--accent: hsl(277, 64%, 61%);
+
+--mainHeading: hsl(0, 0%, 100%);
+--mainParagraph: hsla(0, 0%, 100%, 0.75);
+--statHeadings: hsla(0, 0%, 100%, 0.6);
+}
+
+/* ### Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Lexend Deca', sans-serif; */
+}
+
+body {
+    position: relative;
+    padding: 88px 6.4%;
+    background: var(--mainBg);
+}
+
+main {
+    border-radius: 10px;
+    background: var(--cardBg);
+    text-align: center;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image {
+    background: center top / cover no-repeat url('images/image-header-mobile.jpg');
+    background-color: var(--accent);
+    background-blend-mode: multiply;
+    background-size: 100%;
+    min-height: 240px;
+}
+
+
+.text {
+    padding: 40px 9.33%;
+}
+
+h1,
+.stats {
+    color: var(--mainHeading);
+}
+
+h1 {
+    font-size: 1.84rem;
+    line-height: 2.15rem;
+    letter-spacing: 0.05rem;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+p {
+    margin: 17px 0 39px;
+    color: var(--mainParagraph);
+    line-height: 1.73rem;
+    letter-spacing: 0.05rem;
+    font-size: 0.95rem;
+}
+
+.stat:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.stats {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.stat_headings {
+    color: var(--statHeadings);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--mainHeading);
+}
+
+.attribution a { 
+    color: hsl(228, 58%, 62%); 
+}
+
+
+@media only screen and (min-width: 750px) {
+    body {
+        padding: 170px 10.347%;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .image {
+        background: left / cover no-repeat url('images/image-header-desktop.jpg');
+        background-color: var(--accent);
+        background-blend-mode: multiply;
+        order: 1;
+        width: 100%;
+    }
+
+    .desktop {
+        display: block;
+        margin-right: 0;
+    }
+
+    .text {
+/*         width: 52%; */
+        padding: 70px 10.5% 70px 6.1%;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.44rem;
+        line-height: 3rem;
+    }
+
+    p {
+        margin: 25px 0 50px;
+        padding-right: 4rem;
+    }
+
+    .data {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .stat:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
