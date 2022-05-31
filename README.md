@@ -1,5 +1,7 @@
 # Frontend Mentor - Stats preview card component
 
+[Live site](https://maxdeb1.github.io/stats-preview-card-component/)
+
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
